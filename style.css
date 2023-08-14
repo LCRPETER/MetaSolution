@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "roboto-condense";
+  src: url(./font/roboto-condense/RobotoCondensed-Regular.ttf);
+}
+@font-face {
+  font-family: "roboto";
+  src: url(./font/roboto/Roboto-Regular.ttf);
+}
+/* remettre padding et margin à 0 et enlever tout les sous ligne par defaut */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto";
+  /* border: 2px solid red; */
+}
+:root {
+  --color1: #04306b;
+  --color2: #0097b2;
+  --color3: #f5f5f5;
+  --color4: #ffffff;
+  --color5: #ababab;
+}
+body {
+  font-size: 1rem;
+}
+nav {
+  background: var(--color3);
+  position: fixed;
+  width: 100%;
+  padding: 0;
+  transition: all 0.5s ease;
+}
+nav .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 90px;
+}
+nav .navbar .logo img {
+  width: 120px;
+  height: 80px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+nav .navbar .logo img:hover {
+  transform: scale(1.1);
+}
+nav .navbar .link a {
+  color: var(--color1);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: "roboto-condense";
+  font-weight: 600;
+  padding: 10px 15px;
+  transition: all 0.6s ease-in-out;
+}
+nav .navbar .link a:hover {
+  background: var(--color2);
+  color: var(--color4);
+  border-radius: 8px;
+  box-shadow: 2px 4px 3px 1px var(--color5);
+  transition: all 0.6s ease-in-out;
+}
+nav .navbar .btn-login a {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  padding: 8px 20px;
+  border-radius: 10px;
+  color: var(--color4);
+  background: var(--color2);
+  transition: all 0.5s ease-out;
+}
+nav .navbar .btn-login a:hover {
+  box-shadow: 2px 4px 3px 1px var(--color5);
+  transition: all 0.5s ease-out;
+}
+nav .navbar .search {
+  border: 3.5px solid var(--color2);
+  border-radius: 20px;
+  width: 170px;
+  height: 35px;
+  background: var(--color4);
+  position: relative;
+}
+nav .navbar .search input {
+  width: 140px;
+  height: 35px;
+  border-radius: 20px 0 0px 20px;
+  border: none;
+}
+nav .navbar .search input:focus {
+  outline: none;
+  padding: 10px;
+}
+nav .navbar .search .fa-solid {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--color2);
+  font-size: 1.3rem;
+}
+section {
+  min-height: 80vh;
+}
+.section1 {
+  background: url(./images/background-service.png) center/cover;
+  min-height: 70vh;
+  padding-top: 350px;
+}
+.contenair-home {
+  display: block;
+  min-height: 250px;
+  width: 50%;
+  margin: 0 auto;
+  margin-left: 10px;
+  text-align: center;
+}
+.contenair-home h1 {
+  font-size: 2.5rem;
+  color: var(--color4);
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.contenair-home a {
+  color: var(--color4);
+  text-align: center;
+  font-weight: 600;
+  font-family: "roboto-condense";
+  letter-spacing: 1px;
+  padding: 15px 50px;
+  border-radius: 50px;
+  background: linear-gradient(to right, var(--color2), var(--color1));
+}
