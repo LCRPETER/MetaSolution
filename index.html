@@ -16,7 +16,7 @@
 
   <!-- header-starts -->
   <nav>
-    <ul class="navbar">
+    <ul class="navbar notranslate">
       <li class="logo"><a href="./index.html"><img src="./images/logo.png" alt="logo"></a></li>
       <li class="link"><a href="index.html" class="menu">home</a></li>
       <li class="link"><a href="#services" class="menu">services</a></li>
@@ -28,17 +28,56 @@
         <i class="fa-solid fa-magnifying-glass"></i>
       </li>
       <li class="btn-login">
-        <a href="#login" class="login-btn">login</a>
-        <!-- <div class="login">
-          <input type="text" name="fname" placeholder="first name">
-          <input type="text" name="lname" placeholder="name">
-          <input type="email" name="email" id="Email" placeholder="peter7@glmail.com">
-          <input type="password" name="pwd" id="password" placeholder="256zeruhuwlx">
-          <input type="submit" value="valider">
-
-        </div> -->
+        <a href="#login" id="login-btn">login</a>
       </li>
     </ul>
+
+    <div class=" contenair-User contenair-login">
+      <div class="icon-user"><i class="fa-solid fa-user"></i></div>
+      <span><br><br></span>
+      <form action="">
+        <div class="input-container">
+          <label for="lEmail" class="Email"><i class="fa-solid fa-envelope"></i></label>
+          <input type="text" id="lEmail" name="email" placeholder="Email ID">
+        </div>
+
+        <div class="input-container">
+          <label for="lpassword" class="password"><i class="fa-solid fa-lock"></i></label>
+          <input type="password" name="pwd" id="lpassword" placeholder="password">
+        </div>
+        <p>I do not have an account, <span class="register">sign in.</span></p>
+        <input type="submit" value="LOGIN" class="notranslate">
+      </form>
+    </div>
+
+    <div class="contenair-sign-in contenair-User">
+      <div class="icon-user"><i class="fa-solid fa-user"></i></div>
+      <span><br><br></span>
+      <form action="">
+        <div class="input-container">
+          <label for="user-fname"><i class="fa-solid fa-user"></i></label>
+          <input type="text" id="userf-name" name="fname" placeholder="User name">
+        </div>
+
+        <div class="input-container">
+          <label for="sEmail"><i class="fa-solid fa-envelope"></i></label>
+          <input type="text" id="sEmail" name="email" placeholder="Email">
+        </div>
+
+        <div class="input-container">
+          <label for="spassword"><i class="fa-solid fa-lock"></i></label>
+          <input type="password" name="pwd" id="spassword" placeholder="Password">
+        </div>
+
+        <div class="input-container">
+          <label for=""><i class="fa-solid fa-lock"></i></label>
+          <input type="password" name="pwd" id="confirm" placeholder="Confirm password">
+        </div>
+
+        <p>I have an account, <span class="connect">login.</span></p>
+        <input type="submit" value="valider" class="notranslate">
+      </form>
+    </div>
   </nav>
   <!-- header-ends -->
 
