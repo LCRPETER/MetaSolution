@@ -28,35 +28,35 @@
         <i class="fa-solid fa-magnifying-glass"></i>
       </li>
       <li class="btn-login">
-        <a href="#login" id="login-btn">login</a>
+        <a href="#login">login</a>
       </li>
     </ul>
 
     <div class=" contenair-User contenair-login">
       <div class="icon-user"><i class="fa-solid fa-user"></i></div>
-      <span><br><br></span>
+      <span class="login-remove"> X <br></span>
       <form action="">
         <div class="input-container">
-          <label for="lEmail" class="Email"><i class="fa-solid fa-envelope"></i></label>
-          <input type="text" id="lEmail" name="email" placeholder="Email ID">
+          <label for="lEmail" class="Email"><i class="fa-solid fa-user"></i></label>
+          <input type="text" id="lEmail" name="email" placeholder="User name">
         </div>
 
         <div class="input-container">
           <label for="lpassword" class="password"><i class="fa-solid fa-lock"></i></label>
-          <input type="password" name="pwd" id="lpassword" placeholder="password">
+          <input type="password" name="pwd" id="lpassword" placeholder="Password">
         </div>
-        <p>I do not have an account, <span class="register">sign in.</span></p>
+        <p>You don't have an account, <span class="register">register.</span></p>
         <input type="submit" value="LOGIN" class="notranslate">
       </form>
     </div>
 
     <div class="contenair-sign-in contenair-User">
       <div class="icon-user"><i class="fa-solid fa-user"></i></div>
-      <span><br><br></span>
+      <span class="login-remove">X<br></span>
       <form action="">
         <div class="input-container">
           <label for="user-fname"><i class="fa-solid fa-user"></i></label>
-          <input type="text" id="userf-name" name="fname" placeholder="User name">
+          <input type="text" id="user-fname" name="userName" placeholder="User name">
         </div>
 
         <div class="input-container">
@@ -70,12 +70,12 @@
         </div>
 
         <div class="input-container">
-          <label for=""><i class="fa-solid fa-lock"></i></label>
+          <label for="confirm"><i class="fa-solid fa-lock"></i></label>
           <input type="password" name="pwd" id="confirm" placeholder="Confirm password">
         </div>
 
-        <p>I have an account, <span class="connect">login.</span></p>
-        <input type="submit" value="valider" class="notranslate">
+        <p>You already have an account, <span class="connect">login.</span></p>
+        <input type="submit" value="REGISTER NOW" class="notranslate">
       </form>
     </div>
   </nav>
@@ -170,7 +170,7 @@
           <input type="text" id="name" placeholder="NAME">
           <input type="text" id="first-name" placeholder="FIRST NAME">
           <textarea id="MESSAGE" cols="30" rows="5" placeholder="MESSAGE"></textarea>
-          <button type="submit" class="btn-submit">SEND</button>
+          <input type="submit" value="SEND">
         </form>
       </div>
       <div class="address-location">

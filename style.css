@@ -113,20 +113,21 @@ nav .contenair-User {
   border-radius: 20px;
   right: 15px;
   top: 140px;
+  filter: opacity(90%);
   background: var(--color2);
   transition: all 1s ease;
 }
 nav .contenair-login {
-  height: 300px;
+  height: 320px;
 }
 nav .contenair-User .icon-user {
   position: absolute;
   height: 80px;
   width: 80px;
   border-radius: 1000px;
-  top: -20%;
+  top: -16%;
   left: 50%;
-  transform: translate(-50%, 20%);
+  transform: translate(-50%, 16%);
   text-align: center;
   background: var(--color1);
 }
@@ -139,17 +140,22 @@ nav .contenair-User .icon-user .fa-solid {
   margin-top: 15px;
   font-size: 3rem;
 }
-nav .contenair-User span::after {
-  content: "";
-  font-size: 1.4rem;
+nav .contenair-User .login-remove {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  padding: 5px 15px;
+  font-size: 1.5rem;
   font-weight: bold;
-  right: 15px;
   cursor: pointer;
+  border-radius: 10px;
   color: var(--color3);
+  background: var(--color1);
 }
 nav .contenair-User form {
   display: grid;
   padding: 10px;
+  margin-top: 50px;
 }
 nav .contenair-User form div {
   padding: 10px;
@@ -160,7 +166,7 @@ nav .contenair-User form label {
   padding-bottom: 13px;
   border: none;
   border-radius: 5px 0 0 5px;
-  background: var(--color3);
+  background: var(--color5);
 }
 nav .contenair-User form label .fa-solid {
   top: 5px;
@@ -171,7 +177,7 @@ nav .contenair-User form label .fa-solid {
 nav .contenair-User form input {
   padding: 12px;
   font-size: 1.2rem;
-  color: var(--color1);
+  color: var(--color2);
   border: none;
   border-radius: 0 5px 5px 0;
 }
@@ -197,6 +203,12 @@ nav .contenair-User form input[type="submit"] {
   color: var(--color4);
   cursor: pointer;
   background: linear-gradient(to left, var(--color2), var(--color1));
+}
+nav .contenair-sign-in form input[type="submit"] {
+  width: 170px;
+}
+nav .contenair-User form input[type="submit"]:hover {
+  background: linear-gradient(to left, var(--color5), var(--color1));
 }
 section {
   min-height: 80vh;
