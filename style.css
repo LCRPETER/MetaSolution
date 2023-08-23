@@ -107,7 +107,7 @@ nav .navbar .btn-login a:hover {
 nav .contenair-User {
   display: none;
   position: absolute;
-  height: 450px;
+  height: 500px;
   width: 350px;
   padding: 5px;
   border-radius: 20px;
@@ -119,6 +119,7 @@ nav .contenair-User {
 }
 nav .contenair-login {
   height: 320px;
+  transition: all 1s ease;
 }
 nav .contenair-User .icon-user {
   position: absolute;
@@ -157,6 +158,9 @@ nav .contenair-User form {
   padding: 10px;
   margin-top: 50px;
 }
+nav .contenair-sign-in form {
+  margin-top: 30px;
+}
 nav .contenair-User form div {
   padding: 10px;
 }
@@ -181,12 +185,30 @@ nav .contenair-User form input {
   border: none;
   border-radius: 0 5px 5px 0;
 }
+nav .contenair-User form div span {
+  margin-bottom: 20px;
+  display: block;
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+nav .contenair-User form div p {
+  width: 33%;
+  height: 6px;
+  margin: -2px 0 2px;
+  border-radius: 50px;
+  transition: 0.3s;
+  visibility: hidden;
+  color: rgb(255, 0, 140);
+}
 nav .contenair-User form p {
   color: var(--color3);
   text-align: center;
 }
-nav .contenair-User form .register,
-.connect {
+nav .contenair-User form p .register,
+p .connect {
   color: var(--color1);
   cursor: pointer;
 }
@@ -210,6 +232,31 @@ nav .contenair-sign-in form input[type="submit"] {
 nav .contenair-User form input[type="submit"]:hover {
   background: linear-gradient(to left, var(--color5), var(--color1));
 }
+nav .contenair-sign-in form .error input {
+  color: rgb(255, 0, 140);
+  border: 1px solid rgba(164, 3, 3, 0.527);
+}
+nav .contenair-sign-in form .error span {
+  visibility: visible;
+  opacity: 1;
+  color: rgb(255, 0, 140);
+}
+nav .contenair-sign-in form .progressRed {
+  background: rgb(255, 0, 140);
+  width: 33%;
+  visibility: visible;
+}
+nav .contenair-sign-in form .progressBlue {
+  background: rgb(83, 252, 255);
+  width: 67%;
+  visibility: visible;
+}
+nav .contenair-sign-in form .progressGreen {
+  background: rgb(0, 255, 136);
+  width: 100%;
+  visibility: visible;
+}
+
 section {
   min-height: 80vh;
 }

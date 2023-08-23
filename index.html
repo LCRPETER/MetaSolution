@@ -37,13 +37,13 @@
       <span class="login-remove"> X <br></span>
       <form action="">
         <div class="input-container">
-          <label for="lEmail" class="Email"><i class="fa-solid fa-user"></i></label>
-          <input type="text" id="lEmail" name="email" placeholder="User name">
+          <label for="pseudoLog"><i class="fa-solid fa-user"></i></label>
+          <input type="text" id="pseudoLog" name="pwd" placeholder="User name">
         </div>
 
         <div class="input-container">
-          <label for="lpassword" class="password"><i class="fa-solid fa-lock"></i></label>
-          <input type="password" name="pwd" id="lpassword" placeholder="Password">
+          <label for="LogPassword" class="password"><i class="fa-solid fa-lock"></i></label>
+          <input type="password" name="pwd" id="LogPassword" placeholder="Password">
         </div>
         <p>You don't have an account, <span class="register">register.</span></p>
         <input type="submit" value="LOGIN" class="notranslate">
@@ -54,24 +54,29 @@
       <div class="icon-user"><i class="fa-solid fa-user"></i></div>
       <span class="login-remove">X<br></span>
       <form action="">
-        <div class="input-container">
-          <label for="user-fname"><i class="fa-solid fa-user"></i></label>
-          <input type="text" id="user-fname" name="userName" placeholder="User name">
+        <div class="pseudo-container">
+          <label for="pseudoReg"><i class="fa-solid fa-user"></i></label>
+          <input type="text" id="pseudoReg" name="userName" placeholder="User name">
+          <span></span>
         </div>
 
-        <div class="input-container">
-          <label for="sEmail"><i class="fa-solid fa-envelope"></i></label>
-          <input type="text" id="sEmail" name="email" placeholder="Email">
+        <div class="email-container">
+          <label for="email"><i class="fa-solid fa-envelope"></i></label>
+          <input type="text" id="email" name="email" placeholder="Email">
+          <span></span>
         </div>
 
-        <div class="input-container">
-          <label for="spassword"><i class="fa-solid fa-lock"></i></label>
-          <input type="password" name="pwd" id="spassword" placeholder="Password">
+        <div class="password-container">
+          <label for="passwordReg"><i class="fa-solid fa-lock"></i></label>
+          <input type="password" name="pwd" id="passwordReg" placeholder="Password">
+          <p id="progressBar"></p>
+          <span></span>
         </div>
 
-        <div class="input-container">
+        <div class="confirm-container">
           <label for="confirm"><i class="fa-solid fa-lock"></i></label>
           <input type="password" name="pwd" id="confirm" placeholder="Confirm password">
+          <span></span>
         </div>
 
         <p>You already have an account, <span class="connect">login.</span></p>
