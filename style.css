@@ -107,14 +107,15 @@ nav .navbar .btn-login a:hover {
 nav .contenair-User {
   display: none;
   position: absolute;
-  height: 500px;
+  height: 520px;
   width: 350px;
   padding: 5px;
   border-radius: 20px;
   right: 15px;
-  top: 140px;
-  filter: opacity(90%);
-  background: var(--color2);
+  top: 120px;
+  filter: opacity(97%);
+  box-shadow: -1px 3px 4px 0 var(--color2);
+  background: var(--color1);
   transition: all 1s ease;
 }
 nav .contenair-login {
@@ -130,7 +131,7 @@ nav .contenair-User .icon-user {
   left: 50%;
   transform: translate(-50%, 16%);
   text-align: center;
-  background: var(--color1);
+  background: var(--color2);
 }
 nav .contenair-sign-in .icon-user {
   top: -10%;
@@ -151,7 +152,7 @@ nav .contenair-User .login-remove {
   cursor: pointer;
   border-radius: 10px;
   color: var(--color3);
-  background: var(--color1);
+  background: var(--color2);
 }
 nav .contenair-User form {
   display: grid;
@@ -162,7 +163,10 @@ nav .contenair-sign-in form {
   margin-top: 30px;
 }
 nav .contenair-User form div {
-  padding: 10px;
+  padding: 0 10px;
+}
+nav .contenair-login form div {
+  padding: 12px;
 }
 nav .contenair-User form label {
   padding: 15px;
@@ -176,7 +180,7 @@ nav .contenair-User form label .fa-solid {
   top: 5px;
   font-size: 1.5rem;
   text-align: center;
-  color: var(--color1);
+  color: var(--color2);
 }
 nav .contenair-User form input {
   padding: 12px;
@@ -186,30 +190,32 @@ nav .contenair-User form input {
   border-radius: 0 5px 5px 0;
 }
 nav .contenair-User form div span {
-  margin-bottom: 20px;
   display: block;
   font-size: 1rem;
-  font-family: "Times New Roman", Times, serif;
-  visibility: hidden;
+  font-family: "roboto-condense";
+  font-weight: bold;
   opacity: 0;
+  visibility: hidden;
+  padding-top: 5px;
+  height: 45px;
   transition: 0.3s;
 }
 nav .contenair-User form div p {
-  width: 33%;
-  height: 6px;
-  margin: -2px 0 2px;
-  border-radius: 50px;
+  height: 8px;
+  margin: -3px 0 2px;
+  border-radius: 3px;
   transition: 0.3s;
   visibility: hidden;
   color: rgb(255, 0, 140);
 }
 nav .contenair-User form p {
+  font-size: 1.1rem;
   color: var(--color3);
   text-align: center;
 }
 nav .contenair-User form p .register,
 p .connect {
-  color: var(--color1);
+  color: var(--color2);
   cursor: pointer;
 }
 nav .contenair-User form .register:hover,
@@ -218,16 +224,14 @@ nav .contenair-User form .register:hover,
   font-size: 17px;
 }
 nav .contenair-User form input[type="submit"] {
-  width: 100px;
-  border-right: 5px solid var(--color1);
+  width: 170px;
+  border: none;
   border-radius: 10px;
+  box-shadow: -2px 3px 2px 0px var(--color5);
   margin: 15px auto;
   color: var(--color4);
   cursor: pointer;
   background: linear-gradient(to left, var(--color2), var(--color1));
-}
-nav .contenair-sign-in form input[type="submit"] {
-  width: 170px;
 }
 nav .contenair-User form input[type="submit"]:hover {
   background: linear-gradient(to left, var(--color5), var(--color1));
@@ -239,7 +243,7 @@ nav .contenair-sign-in form .error input {
 nav .contenair-sign-in form .error span {
   visibility: visible;
   opacity: 1;
-  color: rgb(255, 0, 140);
+  color: rgb(255, 105, 185);
 }
 nav .contenair-sign-in form .progressRed {
   background: rgb(255, 0, 140);
@@ -253,7 +257,7 @@ nav .contenair-sign-in form .progressBlue {
 }
 nav .contenair-sign-in form .progressGreen {
   background: rgb(0, 255, 136);
-  width: 100%;
+  width: 99%;
   visibility: visible;
 }
 

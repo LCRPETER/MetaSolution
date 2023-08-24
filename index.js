@@ -1,10 +1,10 @@
+const form = document.querySelector(".contenair-sign-in > form");
 const navbar = document.querySelector("nav");
 const user = document.querySelectorAll(".contenair-User");
 const Click = document.querySelectorAll(".btn-login, p > span, .login-remove");
 const inputs = document.querySelectorAll(
   'input[type="text"], input[type = "password"]'
 );
-
 let pseudo, email, password, confirmPass;
 let lastscroll = 0;
 window.addEventListener("scroll", () => {
@@ -52,6 +52,18 @@ const errorDisplay = (tag, message, valid) => {
     span.textContent = message;
   }
 };
+// console.log(pseudoLog);
+// const pseudoLogChecker = (value) => {
+//   if (value.pseudoLog === value.pseudo) {
+
+//   } else {
+//   }
+// };
+// const LogPasswordChecker = (value) => {
+//   if (pse) {
+//   } else {
+//   }
+// };
 const pseudoChecker = (value) => {
   if (value.length > 0 && (value.length < 3 || value.length > 20)) {
     errorDisplay("pseudo", "Le pseudo doit faire entre 3 et 20 caractères");
@@ -70,7 +82,7 @@ const pseudoChecker = (value) => {
 
 const emailChecker = (value) => {
   if (!value.match(/^[\w_-]+@[\w-]+\.[a-z]{2,4}$/i)) {
-    errorDisplay("email", "Le mail n'est pas valide");
+    errorDisplay("email", "L'adresse mail n'est pas valide");
     email = null;
   } else {
     errorDisplay("email", "", true);
@@ -116,6 +128,12 @@ const confirmChecker = (value) => {
 inputs.forEach((input) => {
   input.addEventListener("input", (e) => {
     switch (e.target.id) {
+      // case "pseudoLog":
+      //   pseudoLogChecker(e.target.value);
+      //   break;
+      // case "LogPassword":
+      //   LogPasswordChecker(e.target.value);
+      //   break;
       case "pseudoReg":
         pseudoChecker(e.target.value);
         break;
@@ -132,4 +150,26 @@ inputs.forEach((input) => {
         break;
     }
   });
+});
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  if (pseudo && email && password && confirmPass) {
+    const data = {
+      pseudo,
+      email,
+      password,
+    };
+    console.log(data);
+    inputs.forEach((input) => (input.value = ""));
+    progressBar.classList = "";
+
+    pseudo = null;
+    email = null;
+    password = null;
+    confirmPass = null;
+    alert("Inscription validée !");
+  } else {
+    alert("veuillez remplir correctement les champs");
+  }
 });
